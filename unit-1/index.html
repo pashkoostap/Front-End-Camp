@@ -2,33 +2,182 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Unit 1</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!--BEGIN CHAT WRAPPER-->
     <div class="osp-chat">
         <!--BEGIN LEFT CHAT WRAPPER-->
-        <div class="left-chat-wrap">
+        <div class="left-chat-wrap  left-chat-wrap--visible">
             <!--BEGIN LEFT CHAT WRAPPER-->
-            <header class="left-chat-header">
-                <button class="left-chat-header__open"></button>
+            <nav class="left-chat-nav">
+                <button class="left-chat-nav__open"></button>
                 <div class="chat-search-panel">
                     <input type="text" class="chat-search-panel__input">
                 </div>
-                <button class="left-chat-header__menu"></button>
-            </header>
+                <button class="left-chat-nav__menu"></button>
+            </nav>
             <!--END LEFT CHAT WRAPPER-->
-
+            <!--BEGIN LEFT CHAT USERS-->
             <ul class="left-chat-users">
+                <!--BEGIN USER INFO-->
                 <li class="left-chat-user">
-                    <div class="left-chat-user-photo"></div>
+                    <div class="left-chat-user-info">
+                        <div class="left-chat-user-photo">
+                            <div class="left-chat-user-photo__img" style="background-image: url(img/avatar__1.jpg)"></div>
+                            <span class="left-chat-user-photo__mess-badge">1</span>
+                        </div>
+                        <h5 class="left-chat-user-info__name">John Faustino</h5>
+                        <h6 class="left-chat-user-info__message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, eum sequi in. Laudantium, ipsum cupiditate possimus eligendi deleniti provident sit, iste consequatur similique adipisci ipsam maxime laboriosam eos itaque quae.</h6>
+                    </div>
+                    <span class="left-chat-user__status">52 m</span>
                 </li>
+                <!--END USER INFO-->
+                <!--BEGIN USER INFO-->
+                <li class="left-chat-user">
+                    <div class="left-chat-user-info">
+                        <div class="left-chat-user-photo">
+                            <div class="left-chat-user-photo__img" style="background-image: url(img/avatar__2.jpg)"></div>
+                        </div>
+                        <h5 class="left-chat-user-info__name">Casio Tofano</h5>
+                        <h6 class="left-chat-user-info__message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi rerum expedita impedit est similique in consectetur nisi magnam debitis, odit autem doloribus aliquid dolorum aperiam vitae dolores eaque, esse accusamus?</h6>
+                    </div>
+                    <span class="left-chat-user__status">1 h</span>
+                </li>
+                <!--END USER INFO-->     
+                <!--BEGIN USER INFO-->
+                <li class="left-chat-user">
+                    <div class="left-chat-user-info">
+                        <div class="left-chat-user-photo">
+                            <div class="left-chat-user-photo__img" style="background-image: url(img/avatar__3.jpg)"></div>
+                        </div>
+                        <h5 class="left-chat-user-info__name">Youtong Lee</h5>
+                        <h6 class="left-chat-user-info__message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi rerum expedita impedit est similique in consectetur nisi magnam debitis, odit autem doloribus aliquid dolorum aperiam vitae dolores eaque, esse accusamus?</h6>
+                    </div>
+                    <span class="left-chat-user__status">38 m</span>
+                </li>
+                <!--END USER INFO-->
+                <!--BEGIN USER INFO-->
+                <li class="left-chat-user  left-chat-user--active">
+                    <div class="left-chat-user-info">
+                        <div class="left-chat-user-photo">
+                            <div class="left-chat-user-photo__img" style="background-image: url(img/avatar__4.jpg)"></div>
+                        </div>
+                        <h5 class="left-chat-user-info__name">Scale Gong</h5>
+                        <h6 class="left-chat-user-info__message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi rerum expedita impedit est similique in consectetur nisi magnam debitis, odit autem doloribus aliquid dolorum aperiam vitae dolores eaque, esse accusamus?</h6>
+                    </div>
+                    <span class="left-chat-user__status">now</span>
+                </li>
+                <!--END USER INFO-->  
+                <!--BEGIN USER INFO-->
+                <li class="left-chat-user">
+                    <div class="left-chat-user-info">
+                        <div class="left-chat-user-photo">
+                            <div class="left-chat-user-photo__img" style="background-image: url(img/avatar__1.jpg)"></div>
+                            <span class="left-chat-user-photo__mess-badge">1</span>
+                        </div>
+                        <h5 class="left-chat-user-info__name">John Faustino</h5>
+                        <h6 class="left-chat-user-info__message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, eum sequi in. Laudantium, ipsum cupiditate possimus eligendi deleniti provident sit, iste consequatur similique adipisci ipsam maxime laboriosam eos itaque quae.</h6>
+                    </div>
+                    <span class="left-chat-user__status">52 m</span>
+                </li>
+                <!--END USER INFO-->
+                <!--BEGIN USER INFO-->
+                <li class="left-chat-user">
+                    <div class="left-chat-user-info">
+                        <div class="left-chat-user-photo">
+                            <div class="left-chat-user-photo__img" style="background-image: url(img/avatar__2.jpg)"></div>
+                        </div>
+                        <h5 class="left-chat-user-info__name">Casio Tofano</h5>
+                        <h6 class="left-chat-user-info__message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi rerum expedita impedit est similique in consectetur nisi magnam debitis, odit autem doloribus aliquid dolorum aperiam vitae dolores eaque, esse accusamus?</h6>
+                    </div>
+                    <span class="left-chat-user__status">1 h</span>
+                </li>
+                <!--END USER INFO-->     
+                <!--BEGIN USER INFO-->
+                <li class="left-chat-user">
+                    <div class="left-chat-user-info">
+                        <div class="left-chat-user-photo">
+                            <div class="left-chat-user-photo__img" style="background-image: url(img/avatar__3.jpg)"></div>
+                        </div>
+                        <h5 class="left-chat-user-info__name">Youtong Lee</h5>
+                        <h6 class="left-chat-user-info__message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi rerum expedita impedit est similique in consectetur nisi magnam debitis, odit autem doloribus aliquid dolorum aperiam vitae dolores eaque, esse accusamus?</h6>
+                    </div>
+                    <span class="left-chat-user__status">38 m</span>
+                </li>
+                <!--END USER INFO-->                 
             </ul>
-
-
+            <!--END LEFT CHAT USERS-->
         </div>
         <!--END LEFT CHAT WRAPPER-->
+
+
+        <!--BEGIN RIGHT CHAT WRAPPER-->
+        <div class="right-chat-wrap">
+            <!--BEGIN RIGHT CHAT HEADER-->
+            <header class="right-chat-header">
+                <div class="right-chat-header__logo">Osp Chat</div>
+            </header>
+            <!--END RIGHT CHAT HEADER-->
+            
+            <!--BEGIN RIGHT CHAT MESSAGES WRAPPER-->
+            <ul class="right-chat-messages">
+                <li class="right-chat-message  right-chat-message--to-user">
+                    <div class="right-chat-message__user-photo" style="background-image: url(img/avatar__1.jpg)"></div>
+                    <div class="right-chat-notice">
+                        <p class="right-chat-notice__content">
+                            To take a trivial example
+                        </p>
+                    </div>
+                    <span class="right-chat-message__date">13:58</span>
+                </li>
+                <li class="right-chat-message  right-chat-message--from-user">
+                    <div class="right-chat-message__user-photo" style="background-image: url(img/avatar__2.jpg)"></div>
+                    <div class="right-chat-notice">
+                        <p class="right-chat-notice__content">
+                            Which of us ever undertakes lab. physical exercise, except to obrain some advantage from it?
+                        </p>
+                    </div>
+                    <span class="right-chat-message__date">14:21</span>
+                </li>
+                <li class="right-chat-message  right-chat-message--to-user">
+                    <div class="right-chat-message__user-photo" style="background-image: url(img/avatar__1.jpg)"></div>
+                    <div class="right-chat-notice">
+                        <p class="right-chat-notice__content">
+                            But I must explain to you how all this mistaken idea 
+                        </p>
+                    </div>
+                    <span class="right-chat-message__date">14:25</span>
+                </li>
+                <li class="right-chat-message  right-chat-message--from-user">
+                    <div class="right-chat-message__user-photo" style="background-image: url(img/avatar__2.jpg)"></div>
+                    <div class="right-chat-notice">
+                        <p class="right-chat-notice__content">
+                            The generated Lorem Ipsum is therefore always free from repetition
+                        </p>
+                    </div>
+                    <span class="right-chat-message__date">14:38</span>
+                </li>
+            </ul>
+            <!--END RIGHT CHAT MESSAGES WRAPPER-->
+            <!--BEGIN RIGHT CHAT FORM-->
+            <form action="/" class="right-chat-form">
+                <textarea name="user-message" id="user-message" cols="30" rows="10" class="right-chat-form__textarea" placeholder="Type something">
+                    
+                </textarea>
+                <button class="right-chat-form__smiles">
+
+                </button>
+                <label for="user-document" class="right-chat-form__document">
+                    <input type="file" id="user-document">
+                </label>
+            </form>
+            <!--END RIGHT CHAT FORM-->
+        </div>
+        <!--END RIGHT CHAT WRAPPER-->
+        
     </div>
     <!--END CHAT WRAPPER-->
 
