@@ -309,6 +309,9 @@ body {
     padding-bottom: 30px;
     margin-bottom: 30px;
 }
+.right-chat-message:first-child {
+    margin-top: auto;
+}
 .right-chat-message__user-photo {
     display: flex;
     min-width: 50px;
