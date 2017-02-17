@@ -5,6 +5,7 @@ $white: #ffffff;
 $white1: rgba(255,255,255,0.5);
 $violet: #3b3e99;
 $violet1: #37398d;
+$violer2: #56588e;
 $blue: #1f2162;
 $blue1: #989ad7;
 $pink: #ed145b;
@@ -36,12 +37,16 @@ body {
 .osp-chat {
     max-width: 1170px;
     width: 100%;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
     background-color: #ffffff;
     display: flex;
     overflow: hidden;
     height: 700px;
     margin: auto;
+    display: none;
+}
+.osp-chat--visible {
+    display: flex;
 }
 /*Reset buttons styles*/
 .osp-chat-nav-btn {
@@ -453,4 +458,109 @@ body {
 }
 .right-chat-form__document input[type="file"] {
     display: none;
+}
+/*LOGIN FORM*/
+.osp-chat-form-wrap {
+    display: flex;
+    max-width: 400px;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: auto;
+    background-color: #ffffff;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.osp-chat-form-wrap--hidden {
+    display: none;
+}
+
+/*Form navigation*/
+.osp-chat-form-nav {
+    display: flex;
+}
+.osp-chat-form-nav__btn {
+    display: flex;
+    width: 50%;
+    font-family: "Ubuntu";
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    background-color: #3b3e99;
+    justify-content: center;
+    color: #ffffff;
+    line-height: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+.osp-chat-form-nav__btn--active {
+    background-color: #56588e;
+}
+/*Chat form*/
+.osp-chat-form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+}
+.osp-chat-form--hidden {
+    display: none;
+}
+.osp-chat-form__input {
+    display: flex;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 14px 20px;
+    margin-bottom: 30px;
+    background-color: #ededfa;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    font-family: "Ubuntu";
+    border: 1px solid #ededfa;
+    transition: all 0.2s ease;
+}
+.osp-chat-form__input--mb10 {
+    margin-bottom: 10px;
+}
+.osp-chat-form__input:focus {
+    border: 1px solid #3b3e99;
+}
+/*Send button*/
+.osp-chat-form__submit {
+    display: flex;
+    width: 100%;
+    font-family: "Ubuntu";
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    background-color: #3b3e99;
+    border: 1px solid #3b3e99;
+    justify-content: center;
+    color: #ffffff;
+    line-height: 20px;
+    padding: 14px 15px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.osp-chat-form__submit:hover {
+    background-color: transparent;
+    color: #3b3e99;
+}
+.osp-chat-form__link {
+    font-size: 14px;
+    line-height: 20px;
+    color: #3b3e99;
+    text-decoration: none;
+    display: flex;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    transition: opacity 0.2s ease;
+}
+.osp-chat-form__link:hover {
+    opacity: 0.5;
 }
