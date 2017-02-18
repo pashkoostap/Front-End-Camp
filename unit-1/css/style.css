@@ -37,6 +37,13 @@ body {
 
 /*Global styles*/
 
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 .osp-chat {
     max-width: 1170px;
     width: 100%;
@@ -127,6 +134,7 @@ body {
     padding: 24px 20px;
     justify-content: space-between;
     flex-shrink: 0;
+    position: relative;
 }
 
 
@@ -714,4 +722,45 @@ body {
 
 .osp-chat-form__link:hover {
     opacity: 0.5;
+}
+
+
+/*CHAT MENU*/
+
+.osp-chat-menu {
+    position: absolute;
+    padding: 10px 0px;
+    right: 24px;
+    top: 70px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    z-index: 10;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.osp-chat-menu--hidden {
+    display: none;
+}
+
+.left-chat-wrap--hidden .osp-chat-menu {
+    right: -60px;
+}
+
+.osp-chat-menu__item {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 5px 15px;
+    background-color: #ffffff;
+    transition: background-color 0.2s ease;
+}
+
+.osp-chat-menu__item:hover {
+    background-color: #ededfa;
+}
+
+.osp-chat-menu__item--divider {
+    height: 1px;
+    background-color: #e8e8e7;
+    padding: 0;
+    margin: 5px 15px;
 }

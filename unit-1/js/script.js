@@ -30,6 +30,22 @@
         document.querySelector('.osp-chat').setAttribute('style', chatHeight);
         document.querySelector('.right-chat-messages').setAttribute('style', rightChatMessagesWrapHeight)
     }
+
+    // SHOW MENU
+    var openMenuButton = document.querySelector('.left-chat-nav__menu'),
+        menuWrapper = document.querySelector('.osp-chat-menu');
+
+    openMenuButton.addEventListener('click', function(e) {
+        var self = this;
+        if (self.className.indexOf('left-chat-nav__menu--active') == -1) {
+            self.classList.add('left-chat-nav__menu--active');
+            menuWrapper.classList.remove('osp-chat-menu--hidden');
+        } else {
+            self.classList.remove('left-chat-nav__menu--active');
+            menuWrapper.classList.add('osp-chat-menu--hidden');
+        }
+    })
+
     // OPEN CHAT USERS
     var openUsersButton = document.querySelector('.left-chat-nav__open'),
         leftChatWrapper = document.querySelector('.left-chat-wrap');
@@ -44,6 +60,8 @@
                 self.classList.remove('left-chat-nav__open--active');
                 leftChatWrapper.classList.remove('left-chat-wrap--visible');
                 leftChatWrapper.classList.add('left-chat-wrap--hidden');
+                openMenuButton.classList.remove('left-chat-nav__menu--active');
+                menuWrapper.classList.add('osp-chat-menu--hidden');
             }
         })
         // LOGIN TABS
@@ -93,4 +111,6 @@
         addElementClass(chatWrapper, 'osp-chat--visible')
         setChatSize();
     })
+
+
 })()
