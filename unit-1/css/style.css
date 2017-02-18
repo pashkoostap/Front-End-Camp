@@ -281,7 +281,7 @@ ol {
     overflow: hidden;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .left-chat-user-info {
         padding-left: 15px;
         padding-right: 15px;
@@ -750,6 +750,7 @@ ol {
     font-size: 14px;
     line-height: 20px;
     padding: 5px 15px;
+    cursor: pointer;
     background-color: #ffffff;
     transition: background-color 0.2s ease;
 }
