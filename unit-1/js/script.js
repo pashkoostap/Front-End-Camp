@@ -14,21 +14,15 @@
     // CALCULATE CHAT SIZE
     function setChatSize() {
         var windowHeight = window.innerHeight,
-            rightChatHeaderHeight = document.querySelector('.right-chat-header').clientHeight,
-            rightChatFormHeight = document.querySelector('.right-chat-form').clientHeight,
-            chatHeight,
-            rightChatMessagesWrapHeight;
+            chatHeight;
 
         if (windowHeight < 1000) {
             chatHeight = 'height: ' + windowHeight + 'px;';
-            rightChatMessagesWrapHeight = 'height: ' + (windowHeight - rightChatHeaderHeight - rightChatFormHeight) + 'px;';
         } else {
             chatHeight = 'height: 700px;';
-            rightChatMessagesWrapHeight = 'height: 530px;';
         }
 
         document.querySelector('.osp-chat').setAttribute('style', chatHeight);
-        document.querySelector('.right-chat-messages').setAttribute('style', rightChatMessagesWrapHeight)
     }
 
     // SHOW MENU
