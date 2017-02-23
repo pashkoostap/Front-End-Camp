@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    //= templates/head-content.html
+
+</head>
+
+<body>
+    //= templates/chat-login-forms.html
+
+    <!--BEGIN CHAT WRAPPER-->
+    <div class="osp-chat">
+        <!--BEGIN LEFT CHAT WRAPPER-->
+        <div class="left-chat-wrap  left-chat-wrap--hidden">
+            //= templates/chat-nav.html
+
+            //= templates/chat-users.html
+        </div>
+        <!--END LEFT CHAT WRAPPER-->
+
+
+        <!--BEGIN RIGHT CHAT WRAPPER-->
+        <div class="right-chat-wrap">
+            //= templates/chat-header.html
+
+            //= templates/chat-messages.html
+
+            //= templates/chat-send-form.html
+        </div>
+        <!--END RIGHT CHAT WRAPPER-->
+
+    </div>
+    <!--END CHAT WRAPPER-->
+
+    <!-- my JS -->
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

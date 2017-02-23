@@ -1,0 +1,40 @@
+// GLOBAL STYLES
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu";
+    background-color: #d7d8f1;
+    display: flex;
+    overflow-x: hidden;
+    height: 100vh;
+}
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+// BUTTON STYLES
+.osp-chat-nav-btn {
+    background: none;
+    border: none;
+    outline: none;
+    width: 35px;
+    height: 32px;
+    color: #ffffff;
+    font-size: 21px;
+    cursor: pointer;
+    position: relative;
+}
+.osp-chat-nav-btn::before {
+    font-family: 'chat-icons';
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
