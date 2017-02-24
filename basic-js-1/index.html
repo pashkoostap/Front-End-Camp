@@ -123,6 +123,40 @@ ucFirst("") == ""; // нет ошибок при пустой строке</code
     }
     // console.log(ucFirst2('ostap'))
 
+    // 3.  truncate(str, maxlength) - trim text function
+    function truncate(str, maxlength, replaceText) {
+        if (str.length > maxlength) {
+            return str.slice(0, (maxlength - replaceText.length)) + replaceText;
+        }
+    }
+    // console.log(truncate('1234567890', 8, '...'));
+
+    // 4. function turnMeBaby 
+    function turnMeBaby(string) {
+        var newString = '';
+        for (var i = 0; i < string.length; i++) {
+            newString += string[string.length - i - 1];
+        }
+        return newString;
+    }
+    // console.log(turnMeBaby('12345'))
+
+    // 5. Amount words in string
+    function amountOfWords(string) {
+        var amountOfWords = 0,
+            currentChar = '',
+            prevChar = string[0];
+        for (var i = 1; i < string.length; i++) {
+            currentChar = string[i];
+            if ((currentChar == ' ' && currentChar != prevChar) || (currentChar == string[string.length - 1] && currentChar != ' ')) {
+                amountOfWords = amountOfWords + 1;
+            }
+            prevChar = currentChar;
+        }
+        return amountOfWords;
+    }
+    // console.log(amountOfWords('   text1   text2   text3 text4  text5 '))
+
     </script>
 
 </body>
