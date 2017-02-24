@@ -157,6 +157,17 @@ ucFirst("") == ""; // нет ошибок при пустой строке</code
     }
     // console.log(amountOfWords('   text1   text2   text3 text4  text5 '))
 
+    // NUMBERS
+    // 1. Raise number to rank
+    function numberToRank(value, rank) {
+        var sum = 1;
+        for (var i = 0; i < rank; i++) {
+            sum = value * sum;
+        }
+        return sum;
+    }
+    // console.log(numberToRank(2,10));
+
     </script>
 
 </body>
