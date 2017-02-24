@@ -81,7 +81,48 @@ ucFirst("") == ""; // нет ошибок при пустой строке</code
     </div>
 
     <script>
-    
+    // STRINGS
+    // 1. Copy string function
+    function copyString(string, n) {
+        return new Array(n + 1).join(string);
+    }
+    // console.log(copyString('string', 4))
+
+    function copyString2(string, n) {
+        var newString = '';
+        for (var i = 0; i < n; i++) {
+            newString += string;
+        }
+        return newString;
+    }
+    // console.log(copyString2('ostap1', 4));
+    // 2. ucFirst - first letter uppercase
+    function ucFirst(string) {
+        var newString = '';
+        if (string.length == 0) {
+            return newString;
+        } else {
+            string.split('').forEach(function(letter, index){
+                if (index != 0) {
+                    newString += letter;
+                } else {
+                    newString += letter.toUpperCase();
+                }
+            })
+            return newString;
+        }
+    }
+    // console.log(ucFirst('ostap'))
+
+    function ucFirst2(string) {
+        if (string.length == 0) {
+            return '';
+        } else {
+            return string.slice(0,1).toUpperCase() + string.slice(1);
+        }
+    }
+    // console.log(ucFirst2('ostap'))
+
     </script>
 
 </body>
