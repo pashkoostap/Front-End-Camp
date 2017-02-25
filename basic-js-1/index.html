@@ -168,6 +168,17 @@ ucFirst("") == ""; // нет ошибок при пустой строке</code
     }
     // console.log(numberToRank(2,10));
 
+    // 2. Multiplication table function
+    function multiplicationTable(num) {
+        for (var i = 1; i <= num; i++) {
+            for (var j = 1; j <= 10; j++) {
+                var expression = i + ' * ' + j + ' = ' + i*j; 
+                console.log(expression);
+            }
+        }
+    }
+    // multiplicationTable(10)
+    
     // 4. Function doubleNum
     function doubleNum(num) {
         var numString = num.toString(),
