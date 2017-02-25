@@ -162,11 +162,23 @@ ucFirst("") == ""; // нет ошибок при пустой строке</code
     function numberToRank(value, rank) {
         var sum = 1;
         for (var i = 0; i < rank; i++) {
-            sum = value * sum;
+            sum *= value;
         }
         return sum;
     }
     // console.log(numberToRank(2,10));
+
+    // 4. Function doubleNum
+    function doubleNum(num) {
+        var numString = num.toString(),
+            numLength = numString.length;
+        if (numLength%2 == 0 && (numString.slice(0, numLength / 2) == numString.slice(numLength / 2, numLength))) {
+            return num;
+        } else {
+            return num * num;
+        }
+    }
+    // console.log(doubleNum(2424));
 
     </script>
 
